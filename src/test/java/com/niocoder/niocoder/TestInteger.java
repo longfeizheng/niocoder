@@ -15,7 +15,7 @@ public class TestInteger {
     public void test1() throws Exception {
         int sum = 0;
         for (int i = 0; sum != 10; i++) {
-            sum = 5 * i + 3;
+            sum = 8 * i + 3;
             if (sum == 10) {
                 System.out.println("i=" + i);
             }
@@ -30,6 +30,9 @@ public class TestInteger {
         System.out.println(Integer.MIN_VALUE + Integer.MAX_VALUE);//-1(-128+127=-1)
         System.out.println(Integer.MAX_VALUE + Integer.MAX_VALUE);//-2(01111+01111=11110 补码+1=000010 所以为-2)
         System.out.println(Integer.MIN_VALUE + Integer.MIN_VALUE);//0（10000+10000=00000）0
+
+        System.out.println(Integer.toBinaryString(-1));
+        System.out.println(Integer.toBinaryString(-1717986917));
     }
 
     @Test
