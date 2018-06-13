@@ -15,7 +15,7 @@ public class TestInteger {
     public void test1() throws Exception {
         int sum = 0;
         for (int i = 0; sum != 10; i++) {
-            sum = 8 * i + 3;
+            sum = 5 * i + 3;
             if (sum == 10) {
                 System.out.println("i=" + i);
             }
